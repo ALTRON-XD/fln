@@ -207,7 +207,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             lel = update.effective_message.reply_text(
-                start_txt.format(usr.first_name), parse_mode=ParseMode.MARKDOWN
+                start_txt.format(user.first_name), parse_mode=ParseMode.MARKDOWN
             )
             time.sleep(1.2)
             lel.edit_text(f"ᴡᴀɪᴛ ʙᴀʙʏ🖤! ʟᴇᴛ ᴍᴇ ɢᴇᴛ ꜱᴛᴀʀᴛᴇᴅ \nꜱᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴍʏ ᴘᴏᴡᴇʀ🤌❤️")
@@ -674,7 +674,6 @@ def get_settings(update: Update, context: CallbackContext):
     chat = update.effective_chat  # type: Optional[Chat]
     user = update.effective_user  # type: Optional[User]
     msg = update.effective_message  # type: Optional[Message]
-    usr = update.effective_user
 
     # ONLY send settings in PM
     if chat.type != chat.PRIVATE:
