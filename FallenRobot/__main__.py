@@ -207,7 +207,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             lel = update.effective_message.reply_text(
-                start_txt.format(user.first_name), parse_mode=ParseMode.MARKDOWN
+                "HOLA"
             )
             time.sleep(1.2)
             lel.edit_text(f"ᴡᴀɪᴛ ʙᴀʙʏ🖤! ʟᴇᴛ ᴍᴇ ɢᴇᴛ ꜱᴛᴀʀᴛᴇᴅ \nꜱᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴍʏ ᴘᴏᴡᴇʀ🤌❤️")
