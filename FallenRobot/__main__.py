@@ -70,6 +70,9 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
+start_txt = """
+ʜᴇʏ🥀 `{}`, ʜᴏᴡ ᴀʀᴇ ʏᴏᴜ!!
+"""
 
 PM_START_TEXT = """
 *ʜᴇʏ* {}, 🥀
