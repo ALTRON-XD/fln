@@ -203,9 +203,18 @@ def start(update: Update, context: CallbackContext):
 
         else:
             first_name = update.effective_user.first_name
-            update.effective_message.reply_sticker(
-                "CAACAgUAAxkBAAJYsmLWRvm70cE-mmxSNCovEf4v1ueJAAIcCAACbMK4VuL4EmZEkq8WKQQ"
+            lel = update.effective_message.reply_text(
+                start_txt.format(usr.first_name), parse_mode=ParseMode.MARKDOWN
             )
+            time.sleep(1.2)
+            lel.edit_text(f"ᴡᴀɪᴛ ʙᴀʙʏ🖤! ʟᴇᴛ ᴍᴇ ɢᴇᴛ ꜱᴛᴀʀᴛᴇᴅ \nꜱᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴍʏ ᴘᴏᴡᴇʀ🤌❤️")
+            time.sleep(1.2)
+            lel.delete()
+            K = update.effective_message.reply_sticker(
+                "CAACAgUAAx0Ca_OVmgABAsMoZa0d_GlZqiDFyZFfHcWkpgJWicMAAlcGAAJYbAFXyUhS33gOxOg0BA"
+            )
+            time.sleep(1.2)
+            K.delete()
             update.effective_message.reply_text(
                 PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
                 reply_markup=InlineKeyboardMarkup(buttons),
